@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "title": "Regassa Automations — Automation for Small Businesses"
+  },
+  "nav": {
+    "brand": "REGASSA AUTOMATIONS",
+    "links": [
+      {
+        "text": "Services",
+        "href": "#services"
+      },
+      {
+        "text": "Case Studies",
+        "href": "#case"
+      },
+      {
+        "text": "About",
+        "href": "#about"
+      }
+    ],
+    "cta": {
+      "text": "Free 20-min Audit",
+      "href": "#book"
+    }
+  },
+  "hero": {
+    "heading": "Stop doing what software should do for you.",
+    "subheading": "MIT-trained engineer helping small businesses automate everything from intake to invoicing. Real systems, measurable ROI, and zero fluff.",
+    "cta": {
+      "text": "Get a Free 20-min Automation Audit",
+      "href": "#book"
+    },
+    "secondaryCta": {
+      "text": "See Case Studies",
+      "href": "#case"
+    },
+    "imageAlt": "Regassa Automations Hero Image"
+  },
+  "trust": [
+    "MIT Engineering",
+    "5+ yrs Software Dev",
+    "Legal Workflow Expertise",
+    "Systems used by 1,000+ users/day*"
+  ],
+  "services": {
+    "id": "services",
+    "cards": [
+      {
+        "title": "Intake delays ➝ 2-minute responses",
+        "description": "Route new leads, auto-generate checks, and trigger follow-ups without manual effort.",
+        "linkText": "Learn more →"
+      },
+      {
+        "title": "Invoice errors ➝ zero rework",
+        "description": "Sync time entries, reconcile retainers, and send clean invoices—automatically.",
+        "linkText": "Learn more →"
+      },
+      {
+        "title": "Manual docs ➝ one-click packages",
+        "description": "Assemble proposals, letters, and packets from structured data with audit trails.",
+        "linkText": "Learn more →"
+      }
+    ]
+  },
+  "caseStudy": {
+    "id": "case",
+    "heading": "Featured Case Study",
+    "meta": "Real client artifacts; numbers anonymized where required.",
+    "subheading": "Automating intake ➝ client onboarding ➝ first invoice",
+    "description": "We replaced email back-and-forth with an intake form that triggers checks, drafts contracts, and creates a client record—cutting turnaround from days to minutes.",
+    "cta": {
+      "text": "Map my automation plan",
+      "href": "#book"
+    },
+    "secondaryCta": {
+      "text": "Read full case study",
+      "href": "#"
+    },
+    "imageAlt": "Case study visual placeholder"
+  },
+  "serviceTeaser": {
+    "heading": "Where I help",
+    "cards": [
+      {
+        "title": "Google Workspace Automation",
+        "description": "Apps Script, Drive/Docs/Sheets, Gmail, Calendar automations."
+      },
+      {
+        "title": "API & System Integrations",
+        "description": "Python, Zapier, Make, n8n; accounting, legal, CRM, and more."
+      },
+      {
+        "title": "Dashboards & Reporting",
+        "description": "Operational dashboards, SLAs, error alerts, and audit trails."
+      }
+    ]
+  },
+  "about": {
+    "id": "about",
+    "badge": "MIT-trained • Streamlined workflows • Intelligent automation",
+    "heading": "Hi, I’m Ayantu.",
+    "description": "I build durable automations that small businesses rely on every day. My background spans IP law and software engineering, so I speak both compliance and code.",
+    "list": [
+      "Systematic, testable workflows with rollback plans",
+      "Security-minded integrations and PII safeguards",
+      "Training, SOPs, and handoff docs included"
+    ],
+    "imageAlt": "Ayantu Headshot"
+  },
+  "ctaBand": {
+    "id": "book",
+    "heading": "Get a free 20-minute automation audit",
+    "description": "Send 3 recurring tasks; I’ll map an automation plan you can implement now.",
+    "form": {
+      "action": "https://formspree.io/f/xjkqbpln",
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "Email",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": "How can we help?",
+          "required": true
+        }
+      ],
+      "submitText": "Request Audit"
+    }
+  },
+  "footer": {
+    "copyright": "© Regassa Automations",
+    "links": [
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "#"
+      }
+    ]
+  }
+}
