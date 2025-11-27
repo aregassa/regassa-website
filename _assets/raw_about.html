@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Regassa Automations</title>
+  <style>
+    :root{
+      --navy:#1E3A8A; --pink:#F72585; --blue:#4361EE; --neutral:#0F0F23;
+      --off:#F8FFFE; --white:#ffffff; --gray:#6B7280; --dark:#0F172A;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--dark);background:var(--white)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+    /* Topbar */
+    .topbar{position:sticky;top:0;z-index:50;background:linear-gradient(135deg,var(--neutral),var(--navy));backdrop-filter:saturate(140%) blur(8px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;color:#fff}
+    .brand{display:flex;align-items:center;gap:12px;position:relative;z-index:10}
+    .hex-container{position:relative;width:42px;height:38px;margin-right:8px}
+    .hex{width:20px;height:20px;clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0 75%,0 25%);position:absolute}
+    .hex.n1{background:var(--navy);top:0;left:11px;z-index:3}
+    .hex.n2{background:var(--pink);top:13px;left:0;z-index:2}
+    .hex.n3{background:var(--blue);top:13px;right:0;z-index:2}
+    .brandname{font-weight:700;letter-spacing:0.08em;color:#fff}
+    .navlinks{display:flex;gap:20px}
+    .navlinks a{opacity:.9}
+    .cta{background:var(--pink);color:#fff;padding:10px 16px;border-radius:10px;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+
+    /* Hero */
+    .hero{background:linear-gradient(135deg,var(--neutral),var(--navy));color:#fff;padding:86px 0}
+    .hero-content{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+    .hero h1{font-size:40px;line-height:1.1;margin:0 0 12px}
+    .hero p{max-width:720px;color:#E5E7EB;font-size:18px;margin:0 0 22px}
+    .hero img{max-width:100%;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.2)}
+
+    /* Cred strip */
+    .cred{background:var(--off);border-top:1px solid #EEF2F7;border-bottom:1px solid #EEF2F7}
+    .credwrap{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap;padding:16px 0;color:var(--dark)}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:#EEF2FF;border:1px solid #DDE3FF;color:#243B8A;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
+
+    /* Story */
+    .section{padding:56px 0}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+    .section h2{color:var(--navy);margin:0 0 12px}
+    .lead{font-size:18px;color:#374151}
+
+    /* Values */
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{border:1px solid #EEF2F7;border-radius:16px;padding:22px;background:#fff}
+    .card h3{margin:0 0 6px;color:var(--navy)}
+    .muted{color:#4B5563}
+
+    /* Timeline */
+    .timeline{border-left:3px solid #E5E7EB;margin-left:8px;padding-left:18px}
+    .titem{margin:14px 0}
+    .titem strong{color:var(--navy)}
+
+    /* CTA band */
+    .ctaband{background:linear-gradient(90deg,var(--navy),#2948C1);color:#fff;padding:44px 0;border-radius:18px;margin:40px 20px}
+
+    /* Footer */
+    footer{padding:40px 0;background:linear-gradient(135deg,var(--neutral),var(--navy));color:#E5E7EB}
+    footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:center}
+    footer a{color:#CBD5E1}
+
+    @media (max-width:1024px){.hero-content{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}}
+    @media (max-width:720px){.navlinks{display:none}.hero h1{font-size:32px}.grid3{grid-template-columns:1fr}}
+    :focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar" role="banner">
+    <div class="container nav" aria-label="Primary">
+      <a href="index.html" class="brand" aria-label="Regassa Automations home">
+        <div class="hex-container">
+          <span class="hex n1"></span>
+          <span class="hex n2"></span>
+          <span class="hex n3"></span>
+        </div>
+        <span class="brandname">REGASSA AUTOMATIONS</span>
+      </a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="cta" href="services.html#book" role="button">Free 20‑min Audit</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-content">
+      <div>
+        <h1>Hi, I’m Ayantu — I turn messy ops into reliable automations.</h1>
+        <p>I help small businesses replace manual glue-work with well‑designed systems. My background spans IP law and software engineering, so I speak both compliance and code. Legal workflow experience is part of my toolkit, but I build across industries.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+          <a href="services.html#book" class="cta" role="button">Get a free 20‑min audit</a>
+          <a href="#story" class="cta" style="background:#fff;color:var(--navy);border:2px solid var(--navy)">My approach</a>
+        </div>
+      </div>
+      <div>
+        <img src="images/main_headshot.jpg" alt="Headshot of Ayantu Regassa" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Credibility strip -->
+  <section class="cred" aria-label="Credibility">
+    <div class="container credwrap">
+      <span class="badge">
+        <span class="hex n1" style="width:12px;height:12px;position:relative;top:0;left:0"></span>
+        MIT Engineering
+      </span>
+      <span class="badge">5+ yrs software development</span>
+      <span class="badge">Legal workflow expertise</span>
+      <span class="badge">Security‑minded & process‑driven</span>
+    </div>
+  </section>
+
+  <!-- Story / Approach -->
+  <section id="story" class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Principles I build by</h2>
+        <p class="lead">Automation should be boring—in a good way. That means predictable runs, clear ownership, easy handoffs, and guardrails when something fails.</p>
+        <div class="grid3" style="margin-top:10px">
+          <div class="card">
+            <h3>Design for failure</h3>
+            <p class="muted">Monitoring, alerts, and rollback plans so incidents are rare and brief.</p>
+          </div>
+          <div class="card">
+            <h3>Make it maintainable</h3>
+            <p class="muted">Readable code, version control, naming conventions, and SOPs shared with your team.</p>
+          </div>
+          <div class="card">
+            <h3>Respect data</h3>
+            <p class="muted">Least‑privilege access, stored secrets, and PII handling aligned with your policies.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>How I work</h2>
+        <ol class="lead" style="padding-left:18px">
+          <li><strong>Discovery:</strong> pull real examples, map data, identify risks.</li>
+          <li><strong>Design:</strong> sequence the flow, define owners, write acceptance tests.</li>
+          <li><strong>Build:</strong> implement integrations, scripts, and monitoring.</li>
+          <li><strong>Deploy:</strong> UAT, training, SOPs, and a clean handoff.</li>
+        </ol>
+        <p class="muted">You’ll always know what’s done, what’s next, and how we’re measuring success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience timeline -->
+  <section class="section" aria-label="Experience timeline">
+    <div class="container">
+      <h2>Experience snapshot</h2>
+      <div class="timeline">
+        <div class="titem"><strong>Freelance Automation Specialist</strong> — B2B small businesses across ops, finance, and client services. Built production automations used daily.</div>
+        <div class="titem"><strong>Software Engineering</strong> — Designed integrations and internal tools; delivered testable systems with monitoring and incident playbooks.</div>
+        <div class="titem"><strong>Intellectual Property Law</strong> — Process rigor, documentation, and compliance mindset that carries into technical work.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="section" aria-label="Tools and stack">
+    <div class="container">
+      <h2>Tools I use</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Google Workspace</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Apps Script</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Zapier</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Make</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">n8n</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Python</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Airtable</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">HubSpot</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Clio / MyCase</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">QuickBooks</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">Stripe</span>
+        <span class="badge" style="background:#fff;border-color:#E5E7EB;color:#374151">DocuSign</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="ctaband" id="book" aria-label="Book a free audit">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+      <div>
+        <h2 style="margin:0 0 6px">Let’s map your first automation</h2>
+        <p style="margin:0;color:#E5E7EB">Bring three recurring tasks. I’ll turn them into a rollout-ready plan.</p>
+      </div>
+      <a class="cta" href="services.html#book" role="button">Get the free audit</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <small>© Regassa Automations</small>
+      <small><a href="#">Privacy</a> • <a href="#">Contact</a></small>
+    </div>
+  </footer>
+</body>
+</html>

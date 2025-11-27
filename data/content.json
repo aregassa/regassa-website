@@ -7,20 +7,20 @@
     "links": [
       {
         "text": "Services",
-        "href": "#services"
+        "href": "index.html#services"
       },
       {
-        "text": "Case Studies",
-        "href": "#case"
+        "text": "Portfolio",
+        "href": "portfolio.html"
       },
       {
         "text": "About",
-        "href": "#about"
+        "href": "about.html"
       }
     ],
     "cta": {
       "text": "Free 20-min Audit",
-      "href": "#book"
+      "href": "index.html#book"
     }
   },
   "hero": {
@@ -106,6 +106,134 @@
       "Training, SOPs, and handoff docs included"
     ],
     "imageAlt": "Ayantu Headshot"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "About — Regassa Automations"
+    },
+    "hero": {
+      "heading": "Hi, I’m Ayantu — I turn messy ops into reliable automations.",
+      "subheading": "I help small businesses replace manual glue-work with well‑designed systems. My background spans IP law and software engineering, so I speak both compliance and code. Legal workflow experience is part of my toolkit, but I build across industries.",
+      "cta": {
+        "text": "Get a free 20‑min audit",
+        "href": "index.html#book"
+      },
+      "secondaryCta": {
+        "text": "My approach",
+        "href": "#story"
+      },
+      "imageAlt": "Headshot of Ayantu Regassa"
+    },
+    "cred": [
+      "MIT Engineering",
+      "5+ yrs software development",
+      "Legal workflow expertise",
+      "Security‑minded & process‑driven"
+    ],
+    "story": {
+      "principles": {
+        "heading": "Principles I build by",
+        "lead": "Automation should be boring—in a good way. That means predictable runs, clear ownership, easy handoffs, and guardrails when something fails.",
+        "cards": [
+          {
+            "title": "Design for failure",
+            "description": "Monitoring, alerts, and rollback plans so incidents are rare and brief."
+          },
+          {
+            "title": "Make it maintainable",
+            "description": "Readable code, version control, naming conventions, and SOPs shared with your team."
+          },
+          {
+            "title": "Respect data",
+            "description": "Least‑privilege access, stored secrets, and PII handling aligned with your policies."
+          }
+        ]
+      },
+      "approach": {
+        "heading": "How I work",
+        "steps": [
+          "<strong>Discovery:</strong> pull real examples, map data, identify risks.",
+          "<strong>Design:</strong> sequence the flow, define owners, write acceptance tests.",
+          "<strong>Build:</strong> implement integrations, scripts, and monitoring.",
+          "<strong>Deploy:</strong> UAT, training, SOPs, and a clean handoff."
+        ],
+        "footer": "You’ll always know what’s done, what’s next, and how we’re measuring success."
+      }
+    },
+    "timeline": {
+      "heading": "Experience snapshot",
+      "items": [
+        "<strong>Freelance Automation Specialist</strong> — B2B small businesses across ops, finance, and client services. Built production automations used daily.",
+        "<strong>Software Engineering</strong> — Designed integrations and internal tools; delivered testable systems with monitoring and incident playbooks.",
+        "<strong>Intellectual Property Law</strong> — Process rigor, documentation, and compliance mindset that carries into technical work."
+      ]
+    },
+    "tools": {
+      "heading": "Tools I use",
+      "items": [
+        "Google Workspace",
+        "Apps Script",
+        "Zapier",
+        "Make",
+        "n8n",
+        "Python",
+        "Airtable",
+        "HubSpot",
+        "Clio / MyCase",
+        "QuickBooks",
+        "Stripe",
+        "DocuSign"
+      ]
+    },
+    "ctaBand": {
+      "heading": "Let’s map your first automation",
+      "description": "Bring three recurring tasks. I’ll turn them into a rollout-ready plan.",
+      "cta": {
+        "text": "Get the free audit",
+        "href": "index.html#book"
+      }
+    }
+  },
+  "portfolioPage": {
+    "meta": {
+      "title": "Portfolio — Regassa Automations"
+    },
+    "hero": {
+      "heading": "Portfolio",
+      "subheading": "Selected automation projects showing how I’ve helped small businesses streamline operations, reduce manual effort, and improve data quality. All client details are anonymized or generalized."
+    },
+    "projects": [
+      {
+        "id": "project1",
+        "title": "Volunteer Management Automation",
+        "details": [
+          "<strong>Problem:</strong> Volunteer data arrived via Forms and a signup tool; staff manually merged lists for four cities, introducing duplicates and inconsistent formats.",
+          "<strong>Process:</strong> Built Apps Script pipelines: on-submit mapping for Forms; scheduled ingest from the signup tool; normalization of phones/dates; dedupe by <em>Email + First Name</em>; role history merged; branding text synced from Docs.",
+          "<strong>Outcome:</strong> City rosters auto-update in Sheets with clean, consistent rows. Admin hours/month reclaimed; fewer duplicates; easier event readiness."
+        ],
+        "diagramAlt": "Diagram showing Forms and signup tool flowing into Apps Script and city Sheets"
+      },
+      {
+        "id": "project2",
+        "title": "Client Intake Automation (Anonymized)",
+        "details": [
+          "<strong>Problem:</strong> Intake info was retyped into a CRM and file system; naming was inconsistent and notifications were missed.",
+          "<strong>Process:</strong> Standardized a single intake form; scripted a CRM create/update; auto-created client folders with consistent names; triggered templated emails to stakeholders.",
+          "<strong>Outcome:</strong> Intake time cut from ~45 → &lt;10 minutes; fewer errors; team sees the same data and files immediately."
+        ],
+        "diagramAlt": "Diagram showing Intake form to CRM with outputs to folders and emails"
+      },
+      {
+        "id": "project3",
+        "title": "Finance Dashboard Automation (Anonymized)",
+        "details": [
+          "<strong>Problem:</strong> Monthly reporting was assembled by hand across exports; categories were inconsistent and visibility lagged.",
+          "<strong>Process:</strong> Connected accounting API to a transformation layer; normalized categories; synced a metrics sheet powering dashboards.",
+          "<strong>Outcome:</strong> Live dashboards in Sheets; month-end close faster; fewer categorization errors and clearer trends."
+        ],
+        "diagramAlt": "Diagram showing Accounting system to Automation logic to Google Sheets dashboards"
+      }
+    ]
   },
   "ctaBand": {
     "id": "book",

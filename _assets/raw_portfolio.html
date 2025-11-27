@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Regassa Automations</title>
+  <style>
+    :root{
+      --navy:#1E3A8A; --pink:#F72585; --blue:#4361EE; --neutral:#0F0F23;
+      --off:#F8FFFE; --white:#ffffff; --gray:#6B7280; --dark:#0F172A;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--dark);background:var(--white)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+    .topbar{background:linear-gradient(135deg,var(--neutral),var(--navy));color:#fff;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700;letter-spacing:0.08em}
+
+    .hero{background:linear-gradient(135deg,var(--neutral),var(--navy));color:#fff;padding:72px 0;text-align:center}
+    .hero h1{font-size:38px;margin:0 0 14px}
+    .hero p{max-width:800px;margin:0 auto;color:#E5E7EB}
+
+    .section{padding:60px 0;border-bottom:1px solid #E5E7EB}
+    .section h2{color:var(--navy);margin-bottom:16px}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+
+    /* Diagram cards */
+    .diagram{position:relative;background:#F8FAFC;border:1px solid #E5E7EB;border-radius:12px;padding:20px;text-align:center;transition:transform .15s ease, box-shadow .15s ease}
+    .diagram:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,23,42,.12)}
+    .diagram .tip{position:absolute;right:12px;bottom:12px;background:linear-gradient(135deg,var(--neutral),var(--navy));color:#fff;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:700;letter-spacing:.02em;opacity:0;transition:opacity .2s ease}
+    .diagram:hover .tip{opacity:1}
+
+    svg{max-width:100%;height:auto}
+    ul{line-height:1.7;color:#374151}
+
+    footer{margin-top:40px;padding:40px 0;background:linear-gradient(135deg,var(--neutral),var(--navy));color:#E5E7EB;text-align:center}
+
+    @media(max-width:900px){.two-col{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span class="brand">REGASSA AUTOMATIONS</span>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p>Selected automation projects showing how I’ve helped small businesses streamline operations, reduce manual effort, and improve data quality. All client details are anonymized or generalized.</p>
+    </div>
+  </header>
+
+  <!-- Project 1 -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Volunteer Management Automation</h2>
+        <ul>
+          <li><strong>Problem:</strong> Volunteer data arrived via Forms and a signup tool; staff manually merged lists for four cities, introducing duplicates and inconsistent formats.</li>
+          <li><strong>Process:</strong> Built Apps Script pipelines: on-submit mapping for Forms; scheduled ingest from the signup tool; normalization of phones/dates; dedupe by <em>Email + First Name</em>; role history merged; branding text synced from Docs.</li>
+          <li><strong>Outcome:</strong> City rosters auto-update in Sheets with clean, consistent rows. Admin hours/month reclaimed; fewer duplicates; easier event readiness.</li>
+        </ul>
+      </div>
+      <div class="diagram" aria-label="Diagram showing Forms and signup tool flowing into Apps Script and city Sheets">
+        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" role="img">
+          <title>Forms + SignUp → Apps Script → Normalize/Dedupe → City Sheets</title>
+          <desc>Data from Google Forms and SignUpGenius flows into Apps Script, which normalizes and deduplicates records before writing to city sheets.</desc>
+          <!-- Forms -->
+          <rect x="30" y="50" width="160" height="60" rx="10" fill="var(--blue)"/>
+          <text x="110" y="85" text-anchor="middle" fill="white" font-size="14">Google Form</text>
+          <line x1="190" y1="80" x2="260" y2="80" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Apps Script -->
+          <rect x="260" y="40" width="180" height="80" rx="10" fill="var(--navy)"/>
+          <text x="350" y="75" text-anchor="middle" fill="white" font-size="14">Apps Script</text>
+
+          <!-- Deduping -->
+          <rect x="470" y="40" width="160" height="80" rx="10" fill="var(--pink)"/>
+          <text x="550" y="75" text-anchor="middle" fill="white" font-size="14">Normalize &amp; Dedupe</text>
+
+          <!-- Sheets -->
+          <rect x="660" y="50" width="120" height="60" rx="10" fill="var(--blue)"/>
+          <text x="720" y="85" text-anchor="middle" fill="white" font-size="14">City Sheets</text>
+
+          <!-- Lines -->
+          <line x1="440" y1="80" x2="470" y2="80" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+          <line x1="630" y1="80" x2="660" y2="80" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- SUG -->
+          <rect x="260" y="150" width="180" height="80" rx="10" fill="var(--blue)"/>
+          <text x="350" y="185" text-anchor="middle" fill="white" font-size="14">SignUpGenius</text>
+          <line x1="350" y1="120" x2="350" y2="150" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Arrow marker -->
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--gray)" />
+            </marker>
+          </defs>
+        </svg>
+        <span class="tip">Hover to preview</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 2 -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Client Intake Automation (Anonymized)</h2>
+        <ul>
+          <li><strong>Problem:</strong> Intake info was retyped into a CRM and file system; naming was inconsistent and notifications were missed.</li>
+          <li><strong>Process:</strong> Standardized a single intake form; scripted a CRM create/update; auto-created client folders with consistent names; triggered templated emails to stakeholders.</li>
+          <li><strong>Outcome:</strong> Intake time cut from ~45 → &lt;10 minutes; fewer errors; team sees the same data and files immediately.</li>
+        </ul>
+      </div>
+      <div class="diagram" aria-label="Diagram showing Intake form to CRM with outputs to folders and emails">
+        <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img">
+          <title>Intake → CRM → Folders &amp; Emails</title>
+          <desc>Intake form sends data to CRM; automation creates folders and sends emails.</desc>
+          <!-- Intake Form -->
+          <rect x="40" y="100" width="140" height="60" rx="10" fill="var(--blue)"/>
+          <text x="110" y="135" text-anchor="middle" fill="white" font-size="14">Intake Form</text>
+          <line x1="180" y1="130" x2="240" y2="130" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- CRM -->
+          <rect x="240" y="90" width="160" height="80" rx="10" fill="var(--navy)"/>
+          <text x="320" y="135" text-anchor="middle" fill="white" font-size="14">CRM System</text>
+          <line x1="400" y1="130" x2="460" y2="130" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Outputs -->
+          <rect x="460" y="60" width="120" height="60" rx="10" fill="var(--pink)"/>
+          <text x="520" y="95" text-anchor="middle" fill="white" font-size="14">Folders</text>
+          <rect x="460" y="150" width="120" height="60" rx="10" fill="var(--pink)"/>
+          <text x="520" y="185" text-anchor="middle" fill="white" font-size="14">Emails</text>
+
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--gray)" />
+            </marker>
+          </defs>
+        </svg>
+        <span class="tip">Hover to preview</span>
+        <p><small>Simplified diagram: Intake form → CRM → Folders &amp; Emails</small></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 3 -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Finance Dashboard Automation (Anonymized)</h2>
+        <ul>
+          <li><strong>Problem:</strong> Monthly reporting was assembled by hand across exports; categories were inconsistent and visibility lagged.</li>
+          <li><strong>Process:</strong> Connected accounting API to a transformation layer; normalized categories; synced a metrics sheet powering dashboards.</li>
+          <li><strong>Outcome:</strong> Live dashboards in Sheets; month-end close faster; fewer categorization errors and clearer trends.</li>
+        </ul>
+      </div>
+      <div class="diagram" aria-label="Diagram showing Accounting system to Automation logic to Google Sheets dashboards">
+        <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" role="img">
+          <title>Accounting → Automation → Google Sheets</title>
+          <desc>Accounting data flows through an automation step and lands in Google Sheets for dashboards.</desc>
+          <!-- Accounting System -->
+          <rect x="40" y="100" width="160" height="60" rx="10" fill="var(--blue)"/>
+          <text x="120" y="135" text-anchor="middle" fill="white" font-size="14">Accounting</text>
+          <line x1="200" y1="130" x2="260" y2="130" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Transformation -->
+          <rect x="260" y="90" width="160" height="80" rx="10" fill="var(--navy)"/>
+          <text x="340" y="135" text-anchor="middle" fill="white" font-size="14">Automation Logic</text>
+          <line x1="420" y1="130" x2="480" y2="130" stroke="var(--gray)" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <!-- Sheets -->
+          <rect x="480" y="100" width="120" height="60" rx="10" fill="var(--pink)"/>
+          <text x="540" y="135" text-anchor="middle" fill="white" font-size="14">Google Sheets</text>
+
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--gray)" />
+            </marker>
+          </defs>
+        </svg>
+        <span class="tip">Hover to preview</span>
+        <p><small>Simplified diagram: Accounting system → Automation → Sheets</small></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <small>© Regassa Automations</small>
+  </footer>
+</body>
+</html>
